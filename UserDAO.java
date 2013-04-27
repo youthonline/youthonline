@@ -93,7 +93,7 @@ public class UserDAO {
 				u.setAttention(rs.getInt(9));
 				u.setBeattention(rs.getInt(10));
 				
-				
+				system.out.print("hello");
 				
 			}
 			
