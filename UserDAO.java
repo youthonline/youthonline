@@ -94,6 +94,7 @@ public class UserDAO {
 				u.setBeattention(rs.getInt(10));
 				
 				system.out.print("hello");
+ 				system.out.print("hello123");
 				
 			}
 			
