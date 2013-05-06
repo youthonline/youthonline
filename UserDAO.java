@@ -1,4 +1,4 @@
-package com.java101.microblog.dao;
+﻿package com.java101.microblog.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -63,7 +63,7 @@ public class UserDAO {
 	public User getUserByUsername(String username){
 		
 	
-		User u = null;
+		User u = n
 		con = DBConnection.getConnection();
 		/*try{
 			Class.forName("com.mysql.jdbc.Driver");
