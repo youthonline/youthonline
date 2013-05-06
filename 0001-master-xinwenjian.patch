@@ -1,0 +1,64 @@
+From 731f0758faf686d0e5ec8f00ea05830b8a5ec50f Mon Sep 17 00:00:00 2001
+From: xiao lang <1115662687@qq.com>
+Date: Mon, 6 May 2013 20:02:30 +0800
+Subject: [PATCH 1/2] master xinwenjian
+
+---
+ comment.xml | 44 ++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 44 insertions(+)
+ create mode 100644 comment.xml
+
+diff --git a/comment.xml b/comment.xml
+new file mode 100644
+index 0000000..b6406db
+--- /dev/null
++++ b/comment.xml
+@@ -0,0 +1,44 @@
++<?xml version="1.0" encoding="UTF-8" ?>
++
++<!DOCTYPE struts PUBLIC
++    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
++    "http://struts.apache.org/dtds/struts-2.0.dtd">
++
++<struts>
++      <package name="comment" extends="struts-default">
++      	<action name="comment_*" class="commentAction" method="{1}">
++      		<result name="addcomment" type="redirectAction">user/project_prodetail?pid=${#request.id}</result>
++      		<result name="listcomment">/admin/listcomment.jsp</result>
++      		<result name="deletecomment" type="redirectAction">comment_listComment?pid=${#request.id}</result>
++      	</action>
++      	
++      	
++      	<!-- <action name="addComment" class="addComment">
++			<result name="success" type="redirectAction">user/listdetail.action?pid=${#request.id}</result>
++			<result name="error">/error.jsp</result>
++			<result name="login">/user/userlogin.jsp</result>
++		</action>
++		后台显示方法 
++		<action name="listComment" class="listComment" method="listComment">
++			<result name="listcomment">/admin/Commentlistshow.jsp</result>
++			<result name="success">/admin/Commentlistshow.jsp</result>
++			<result name="error">/error.jsp</result>
++		</action>
++		<action name="ListComment" class="listComment">
++			<result name="success">/admin/Commentlistshow.jsp</result>
++			<result name="error">/error.jsp</result>
++		</action>
++		前台显示方法 redirectAction
++		<action name="show" class="listComment" method="show">
++			<result name="success">/index.jsp</result>
++			<result name="error">/error.jsp</result>
++		</action>
++		<action name="editComment" class="editComment">
++			<result name = "success" type="redirectAction">listComment?pid=${#request.id}</result>
++			<result name="error">/error.jsp</result>
++		</action>
++		<action name="deleteComment" class = "editComment" method="deleteComment">
++			<result name = "success" type="chain">listComment</result>
++		</action> -->
++	</package>
++</struts>
+\ No newline at end of file
+-- 
+1.8.0.msysgit.0
+
