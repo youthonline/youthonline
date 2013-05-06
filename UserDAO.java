@@ -15,7 +15,7 @@ public class UserDAO {
 	
 	Connection con = null;
 	PreparedStatement ps = null;
-	ResultSet rs = null;
+	ResultSet rs =;
 	
 	/**
 	 * 根据用户id返回一个用户对象，如果id不存在则返回null
